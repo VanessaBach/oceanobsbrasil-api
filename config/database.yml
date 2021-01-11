@@ -83,3 +83,12 @@ production:
   database: oceanobsbrasil_api_production
   username: oceanobsbrasil_api
   password: <%= ENV['OCEANOBSBRASIL_API_DATABASE_PASSWORD'] %>
+
+external:
+  database: oceanobsbrasil
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  host: oceanobsbrasil.postgres.uhserver.com
+  username: oceanobsbrasil
+  password: <%= ENV['OCEANOBS']%>
